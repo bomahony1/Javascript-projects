@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies-App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <i id="logo" class="fa-solid fa-film">MovieApp</i>
+        <form id="form">
+            <input type="text" id="search" fname="search" placeholder="Search" class="search"/>
+        </form>
+    </header>
+    <div id="search-container">
+    </div>
+    <div id="popup-container"></div>
+    <div id="overlay"></div>
+    <section id="default">
+        <div class="trending">
+            <h2 id="trending-header">Trending</h2>
+            <div id="trending-movies"></div>
+        </div>
+        <div class="categories">
+            <h2 id="category-header">Browse By Category</h2>
+            <div id="genres">
+                <h3 class="highlight" id="action">Action</h3>
+                <h3 id="thriller">Thriller</h3>
+                <h3 id="comedy">Comedy</h3>
+                <h3 id="romance">Romance</h3>
+            </div>
+            <div id="genre-filter">
+                
+            </div>
+        </div>
+    </section>
+</body>
+</html>

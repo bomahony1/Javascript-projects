@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: "Noto Sans";
+    margin: 0;
+}
+
+body {
+    color: white;
+    background-color: #22254b;
+}
+
+header i {
+    padding: 2rem;
+    font-size: 2rem;
+    margin: 35px;
+}
+
+#logo {
+    cursor: pointer;
+}
+
+/* Search */
+
+form {
+    margin: 5px;
+    padding-left: 60px;
+}
+
+.search {
+    background-color: transparent;
+    border: 2px solid #373b69;
+    color: #fff;
+    font-family: inherit;
+    font-size: .9rem;
+    border-radius: 50px;
+}
+
+.search::placeholder {
+    color: #fff;
+}
+
+.search:focus {
+    outline: none;
+}
+
+/* Trending */
+
+.trending {
+    padding: 2rem;
+}
+
+#trending-header {
+    font-size: 35px;
+    padding-left: 40px;
+}
+
+
+#trending-movies {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 25%;
+    padding-top: 20px;
+    margin: 0 auto;
+    overflow-x: auto;
+}
+
+.movie {
+    width: 250px;
+    padding: 30px;
+    display: grid;
+    grid-template-rows: min-content;
+}
+
+.movie img {
+    width: 250px;
+    height: auto;
+    border-radius: 4px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#title {
+    font-weight:bolder;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.date-genre {
+    font-size: 15px;
+    font-weight: lighter;
+    color: #94a3b8
+}
+
+.review {
+    display: flex;
+    font-size: 15px;
+    font-weight: lighter;
+    color: #94a3b8;
+}
+
+.movie span {
+    font-size: 13px;
+    margin-left: .5rem;
+}
+
+#star {
+    font-size: 13px;
+    justify-content: baseline;
+    color: yellow;
+    margin-right: .5rem;
+}
+
+/* Popup */
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    transition: 200ms ease-in-out;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: #334155;
+    width: 700px;
+    padding: 1rem;
+}
+
+
+.popup > i {
+    float: right;
+    padding-right: .75rem;
+    padding-top: .5rem;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+
+.popup img {
+    display: flex;
+    margin: 25px auto 0 auto;
+    height: auto;
+    width: 250px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.popup h3 {
+    padding-top: 1rem;
+    padding-left: .5rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.movie-info {
+    padding: .5rem;
+    font-size: .8rem;
+    margin-top: 0;
+  
+}
+
+#description {
+    padding: .5rem;
+    font-size: .9rem;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: 200ms ease-in-out;
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* Search Result */
+#search-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 35px;
+}
+
+.search-result {
+    width: 260px;
+    margin-top: 75px;
+    background-color: #373b69;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.search-result img {
+    width: 260px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.movie-search-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 17px;
+    font-weight: bold;
+    padding: .7rem;
+}
+
+#search-title {
+    cursor: pointer;
+}
+
+#rating {
+    padding:5px;
+    background-color: #22254b;
+}
+
+/* Genres */
+
+#category-header {
+    font-size: 35px;
+    padding-left: 40px;
+}
+
+#genres {
+    display: flex;
+    padding-left: 35px;
+    padding-top: 18px;
+}
+
+#genres h3 {
+    padding: 1.4rem;
+    font-weight: lighter;
+    cursor: pointer;
+}
+
+.highlight {
+    border-radius: 50px;
+    background-color: #fff;
+    color: #22254b; 
+}
+
+#genre-filter {
+    display: inline-grid;
+    grid-template-columns: 500px 500px;
+    grid-template-rows: 300px 300px;
+    align-items: center;
+    gap: 80px;
+    justify-items: center;
+    margin: 30px 200px;
+}
+
+.movies {
+    position: relative;
+}
+
+.movies img {
+    border-radius: 15px;
+}
+
+
+.movies h3 {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    cursor: pointer;
+}
+
+
