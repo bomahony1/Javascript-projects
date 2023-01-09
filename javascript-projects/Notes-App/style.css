@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200;1,400;1,600&family=Source+Sans+Pro:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 3rem;
+}
+
+#add-btn {
+    position: fixed;
+    color: white;
+    background-color: #bef264;
+    font-size: 12px;
+    font-weight: bold;
+    width: 85px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    margin-left: 1200px;
+    top: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+#add-btn:active {
+    font-size: 13px;
+}
+
+.note-container {
+    top: 3rem;
+    margin: 20px;
+    background-color: white;
+    width: 300px;
+    height: 350px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#note-header {
+    background-color: #bef264;
+    width: 300px;
+    height: 30px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+#note {
+    width: 300px;
+    height: 320px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+}
+
+#note-header button {
+    background-color: transparent;
+    border: none;
+    float: right;
+    padding: .41rem;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#note-header button:active {
+    font-size: 17px;
+    transition: font-size .1s ease-in-out;
+}
+
+#btn-delete {
+    display: block;
+}
+
+.notes .main{
+    height: 350px;
+    width: 100%;
+}
+
+.notes .hidden {
+    display: none;
+}
+
+.notes textarea {
+    background-color: white;
+    height: 350px;
+}
+
+
